@@ -64,6 +64,8 @@ nav a{
 }
 .icons{
     color: var(--body-verde-escuro); 
+    height: 30xp
+   abackground-color: black;
 }
 
 .dropdown{
