@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --branco: #f0f2f5;
+    --body-verde-claro: #80c82a;
+    --body-verde-escuro: #006100;
+    --fundo-verde-claro: #168105;
+    --fundo-verde-escuro: #003200;
+}
+
+/* CABEÇALHO */
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: var(--branco); 
+    padding: 0 10px;
+}
+.cabecalho nav ul{
+    list-style: none; /* Remove a bolinha da lista */
+    padding: 0;
+    margin: 0;
+    display: flex;    /* Coloca os itens (li) lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px;        /* Espaço entre os ícones */
+}
+
+/* 2. Garante que os links dentro da li também se alinhem */
+.cabecalho nav li{
+    display: flex;
+    align-items: center;
+}
+
+.logo-e-nomedosite{ 
+    display: flex;
+    align-items: center;
+}
+
+.logotipo{
+    height: auto;
+    width: 40px;
+}
+
+.nomedosite{
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Lexend', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    padding-left: 5px;
+    color: var(--body-verde-escuro);
+}
+
+nav a{
+    text-decoration: none; 
+    margin: 0; 
+    padding: 0;
+}
+.icons{
+    color: var(--body-verde-escuro); 
+}
+
+.dropdown{
+    position: relative;
+    z-index: 10;
+}
+.dropdown-menu{
+    position: relative; 
+
+}
+
+.topicos-menu{
+    font-family: Poppins, Helvetica, sans-serif;
+    color: white; 
+    padding-top: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;       /* Garante alinhamento */
+    cursor: pointer;
+    background-color: var(--body-verde-escuro); 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.botao-cancelar{
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    color: white;
+    text-align: right;
+}
+.titulo--dropdown-menu{
+    color: white; 
+    font-size: 25px;
+    font-family: Poppins, Helvetica, sans-serif; 
+    font-weight: 800;
+}
+.dropdown-menu{
+    position: absolute;
+    right: 0; 
+    display: none; 
+    height: 101vh; 
+    width: 400px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: var(--body-verde-escuro);
+    top: -25px;
+}
+.dropdown-menu .topicos-menu:hover{
+    background-color: var(--fundo-verde-claro);
+    
+}
+.dropdown-menu a{
+    display: block;
+    color: white;
+}
+
+.icons-e-topicos-menu{
+    display: flex;
+        padding-top: 7px;
+
+} 
+.icon_do_menu{
+    color: white; 
+    padding-right: 5px; 
+}
+
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #168105, #003200)
+}
