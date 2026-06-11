@@ -70,7 +70,7 @@ nav a{
 }
 
 .dropdown{
-    position: relative;
+    position: absolute;
 }
 
 .topicos-menu{
@@ -101,7 +101,7 @@ nav a{
     font-weight: 800;
 }
 .dropdown-menu{
-    position: absolute;
+    position: relative;
     right: 0; 
     display: none; 
     height: 101vh; 
