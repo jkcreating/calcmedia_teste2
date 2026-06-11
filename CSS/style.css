@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
-    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-family: Poppins, Arial, Helvetica, sans-serif; 
 }
 
 :root{
@@ -13,6 +13,10 @@
     --fundo-verde-escuro: #003200;
 }
 
+body{
+    background-image: linear-gradient(to right, #168105, #003200)
+
+}
 /* CABEÇALHO */
 .cabecalho{
     display: flex;
@@ -33,8 +37,7 @@
 
 /* 2. Garante que os links dentro da li também se alinhem */
 .cabecalho nav li{
-    display: flex;
-    align-items: center;
+    align-items: center; 
 }
 
 .logo-e-nomedosite{ 
@@ -63,18 +66,11 @@ nav a{
     padding: 0;
 }
 .icons{
-    color: var(--body-verde-escuro); 
-    height: 30xp
-   abackground-color: black;
+    color: var(--body-verde-escuro);
 }
 
 .dropdown{
     position: relative;
-    z-index: 10;
-}
-.dropdown-menu{
-    position: relative; 
-
 }
 
 .topicos-menu{
@@ -89,7 +85,7 @@ nav a{
     background-color: var(--body-verde-escuro); 
     padding-left: 20px;
     padding-right: 20px; 
-        box-shadow: 0 0 8px black;
+    box-shadow: 0 0 8px black;
 
 }
 .botao-cancelar{
@@ -112,10 +108,11 @@ nav a{
     width: 400px;
     text-align: left;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 20px; 
     padding-bottom: 20px;
     background-color: var(--body-verde-escuro);
     top: -25px;
+    z-index: 1000; 
 }
 .dropdown-menu .topicos-menu:hover{
     background-color: var(--fundo-verde-claro); 
@@ -127,7 +124,7 @@ nav a{
 
 .icons-e-topicos-menu{
     display: flex;
-        padding-top: 7px;
+    padding-top: 7px;
 
 } 
 .icon_do_menu{
@@ -135,11 +132,26 @@ nav a{
     padding-right: 5px; 
 }
 
-
-
-
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, #168105, #003200)
+main{
+    height: 80vh; /* O que faz ficar lá embaixo */ 
+}
+/* RODAPÉ */ 
+footer{
+    width: 100%; 
+    color: var(--body-verde-escuro);
+}
+#footer_content{
+    background-color: var(--body-verde-claro); 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+#footer_contacts h1{
+    margin-bottom: 0.75rem;
+}
+#footer-list{
+    display: flex;
+    text-decoration: none; 
+    gap: 0.75; 
+    list-style: none; /* Tira as bolinhas da lista */ 
 }
