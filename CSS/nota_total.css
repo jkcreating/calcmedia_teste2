@@ -59,6 +59,10 @@ body{
     color: var(--body-verde-escuro);
 }
 
+.link_index{
+    text-decoration: none;
+}
+
 nav a{
     text-decoration: none; 
     margin: 0; 
