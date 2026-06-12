@@ -195,7 +195,6 @@ footer{
 #footer_content{
     background-color: var(--fundo-verde-escuro); 
     display: flex; 
-    padding: 20px; 
     justify-content: space-between;
 }
 #footer_contacts h1{
@@ -238,8 +237,6 @@ footer{
 .topicos-footer{
     display: grid; 
     align-items: center; 
-    padding-left: 40px;
-    padding-right: 30px;
 }
 .topicos-footer-texto{
     color: var(--branco); 
