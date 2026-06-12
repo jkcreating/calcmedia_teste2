@@ -98,7 +98,8 @@ nav a{
     top: 0; 
     right: 0; 
     height: 100vh;
-    width: 400px;
+    width: 90vw;
+    max-width: 400px;
     text-align: left;
     padding-left: 20px;
     padding-right: 20px; 
