@@ -155,7 +155,10 @@ nav a{
     text-align: left;
 }
 
-
+#menu-toggle:checked ~ .menu-dropdown-filho {
+    transform: translateX(0);
+    pointer-events: auto;
+}
 
 
 
