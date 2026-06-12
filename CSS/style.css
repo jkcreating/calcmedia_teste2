@@ -15,6 +15,7 @@
 
 body{
     background-image: linear-gradient(to right, #168105, #003200); 
+    overflow-x: hidden;
 }
 
 /* CABEÇALHO */
