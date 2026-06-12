@@ -87,7 +87,7 @@ nav a{
     color: white;
     text-align: right;
 }
-.titulo--menu-dropdown-filho{
+.titulo--dropdown-menu{
     color: white; 
     font-size: 25px;
     font-family: Poppins, Helvetica, sans-serif; 
@@ -120,7 +120,6 @@ nav a{
 }
 
 
-/* Celular */
 .menu-dropdown-filho .topicos-menu:hover{
     background-color: var(--fundo-verde-claro); 
 }
@@ -152,16 +151,14 @@ nav a{
     pointer-events: auto;
 }
 
-/* FECHADO (padrão) */
 .menu-dropdown-filho {
     transform: translateX(100%);
     pointer-events: none;
 }
 
-/* ABERTO */
 #menu-toggle:checked ~ .menu-dropdown-filho {
     transform: translateX(0);
-    pointer-events: auto;
+    pointer-events: auto; 
 }
 
 
