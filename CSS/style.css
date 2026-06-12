@@ -66,7 +66,9 @@ nav a{
     padding: 0;
 }
 .icons{
-    color: var(--body-verde-escuro);
+    color: var(--body-verde-escuro); 
+    cursor: pointer; 
+    font-size: 32px;
 }
 
 .menu-dropdown{
@@ -85,28 +87,12 @@ nav a{
     color: white;
     text-align: right;
 }
-.titulo--menu-dropdown-filho{
+.titulo--dropdown-menu{
     color: white; 
     font-size: 25px;
     font-family: Poppins, Helvetica, sans-serif; 
     font-weight: 800;
-}
-
-
-
-#menu-toggle{
-    display: none;
-}
-
-.menu-dropdown-filho{
-    display: none;
-}
-
-#menu-toggle:checked ~ .menu-dropdown-filho{
-    display: block;
-}
-
-
+} 
 
 .menu-dropdown-filho{
     position: fixed; 
@@ -115,13 +101,34 @@ nav a{
     height: 100vh;
     width: 400px;
     text-align: left;
-    padding-left: 20px;
-    padding-right: 20px; 
+    padding-left:30px;
+    padding-right: 30px; 
     padding-bottom: 20px;
     background-color: var(--body-verde-escuro);
     z-index: 1000; 
-    
+
+    transform: translateX(100%);
+    transition: 0.25s ease; /* Menu entra após 0.25 segundos */ 
+    pointer-events: none;
 }
+#menu-toggle{
+    position: absolute !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    pointer-events: none !important;
+}
+
+/* hover desktop */
+@media (hover: hover) and (pointer: fine){
+     .menu-dropdown:hover .menu-dropdown-filho{
+        transform: translateX(0);
+        pointer-events: auto;
+    }
+
+}
+
+/* Celular */
 .menu-dropdown-filho .topicos-menu:hover{
     background-color: var(--fundo-verde-claro); 
 }
@@ -134,12 +141,19 @@ nav a{
     display: flex;
     padding-top: 7px;
 
-} 
+}  
 .icon_do_menu{
     color: white; 
     padding-right: 5px; 
 }
 
+.botao-cancelar{
+    font-size: 40px;
+    z-index: 10000;
+    position: relative;
+    cursor: pointer; 
+    text-align: left;
+}
 
 
 
