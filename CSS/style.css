@@ -257,3 +257,17 @@ footer{
     opacity: 70%; 
     font-size: 15px;
 }
+
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.cabecalho {
+    width: 100%;
+}
