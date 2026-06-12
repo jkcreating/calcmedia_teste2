@@ -101,14 +101,14 @@ nav a{
     height: 100vh;
     width: 400px;
     text-align: left;
-    padding-left:30px;
-    padding-right: 30px; 
+    padding-left: 20px;
+    padding-right: 20px; 
     padding-bottom: 20px;
     background-color: var(--body-verde-escuro);
     z-index: 1000; 
 
     transform: translateX(100%);
-    transition: 0.25s ease; /* Menu entra após 0.25 segundos */ 
+    transition: 0.25s ease; 
     pointer-events: none;
 }
 #menu-toggle{
