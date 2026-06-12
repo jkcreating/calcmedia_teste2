@@ -118,8 +118,6 @@ nav a{
     height: 0 !important;
     pointer-events: none !important;
 }
-
-
 .menu-dropdown-filho .topicos-menu:hover{
     background-color: var(--fundo-verde-claro); 
 }
