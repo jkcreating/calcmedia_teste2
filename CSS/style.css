@@ -61,8 +61,6 @@ body{
 
 nav a{
     text-decoration: none; 
-    margin: 0; 
-    padding: 0;
 }
 .icons{
     color: var(--body-verde-escuro); 
@@ -76,18 +74,18 @@ nav a{
 
 .topicos-menu{
     font-family: Poppins, Helvetica, sans-serif;
-    color: white; 
+    color: var(--branco); 
     padding-top: 5px;
 }
 
 .botao-cancelar{
     padding-top: 10px; 
     padding-bottom: 10px; 
-    color: white;
+    color: var(--branco);
     text-align: right;
 }
 .titulo--dropdown-menu{
-    color: white; 
+    color: var(--branco); 
     font-size: 25px;
     font-family: Poppins, Helvetica, sans-serif; 
     font-weight: 800;
@@ -122,7 +120,7 @@ nav a{
 }
 .menu-dropdown-filho a{
     display: block;
-    color: white;
+    color: var(--branco);
 }
 
 .icons-e-topicos-menu{
@@ -131,7 +129,7 @@ nav a{
 
 }  
 .icon_do_menu{
-    color: white; 
+    color: var(--branco); 
     padding-right: 5px; 
 }
 
@@ -161,7 +159,7 @@ nav a{
 /* BODY */
 .texto-body-titulo{
     font-family: Poppins, Arial, Helvetica, sans-serif; 
-    color: white; 
+    color: var(--branco); 
     font-size: 21px; 
     font-weight: 700;
     padding-left: 20px; 
@@ -169,11 +167,11 @@ nav a{
 } 
 .texto-body-titulo-ul{
     padding-left: 40px; 
-    color: white;
+    color: var(--branco);
 }
 .texto-body-topicos{
     font-family: Poppins, Arial, Helvetica, sans-serif; 
-    color: white; 
+    color: var(--branco); 
     font-size: 17px; 
 }
 
