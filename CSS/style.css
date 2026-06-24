@@ -167,6 +167,7 @@ nav a{
 } 
 .texto-body-titulo-ul{
     padding-left: 40px; 
+    padding-right: 40px;
     color: var(--branco);
 }
 .texto-body-topicos{
@@ -175,7 +176,7 @@ nav a{
     font-size: 17px; 
     text-decoration: underline;
     text-decoration-color: var(--body-verde-claro); 
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: 1px; 
 }
 
 /* RODAPÉ */ 
@@ -258,7 +259,6 @@ footer{
 @media screen and (max-width: 800px) {
     #footer_content {
         display: block;
-        
     }
     .versiculo{
         font-size: 15px;
