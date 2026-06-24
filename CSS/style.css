@@ -9,12 +9,12 @@
     --branco: #f0f2f5;
     --body-verde-claro: #80c82a;
     --body-verde-escuro: #006100;
-    --fundo-verde-claro: #136606;
+    --fundo-verde-claro: #136306;
     --fundo-verde-escuro: #003200;
 }
 
 body{
-    background-image: linear-gradient(to right, #168105, #003200); 
+    background-image: linear-gradient(to right, var(--fundo-verde-claro), var(--fundo-verde-escuro)); 
 }
 
 /* CABEÇALHO */
@@ -173,6 +173,9 @@ nav a{
     font-family: Poppins, Arial, Helvetica, sans-serif; 
     color: var(--branco); 
     font-size: 17px; 
+    text-decoration: underline;
+    text-decoration-color: var(--body-verde-claro); 
+    text-decoration-thickness: 1px;
 }
 
 /* RODAPÉ */ 
@@ -221,7 +224,9 @@ footer{
 .versiculo{
     font-family: Poppins, Arial, Helvetica, sans-serif; 
     color: var(--body-verde-escuro); 
-    color: var(--branco);
+    color: var(--branco); 
+    text-underline-offset: 2.5px; 
+    text-decoration-color: var(--branco);
 } 
 .divs-topicos-footer{
     display: flex; 
@@ -237,11 +242,12 @@ footer{
     font-family: Poppins, Arial, Helvetica, sans-serif; 
     font-size: 13px; 
     opacity: 70%; 
-    text-decoration: none;
+    text-decoration: none; 
 }
 .footer-copyright{
     text-align: center; 
     background-color: var(--fundo-verde-escuro); 
+    padding-bottom: 15px; 
 } 
 .footer-copyright-texto{
     color: var(--branco); 
@@ -258,15 +264,15 @@ footer{
         font-size: 15px;
     }
     .logo-e-nomedosite-footer{
-        padding-left: 2rem; 
-        padding-top: 2rem; 
+        padding-left: 4px; 
+        padding-top: 4px; 
     }
     .divs-topicos-footer{
         justify-content: space-between;
     }
     .topicos-footer{
-        padding-left: 2rem; 
-        padding-top: 2rem; 
+        padding-left: 4px; 
+        padding-top: 30px; 
         font-size: 20%; 
     }
     .topicos-footer-texto{
