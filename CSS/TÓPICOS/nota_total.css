@@ -14,7 +14,7 @@
 }
 
 body{
-    background-image: linear-gradient(to right, var(--fundo-verde-claro), var(--fundo-verde-escuro)); 
+    background-image: linear-gradient(to right, #168105, #003200); 
 }
 
 /* CABEÇALHO */
@@ -59,8 +59,14 @@ body{
     color: var(--body-verde-escuro);
 }
 
+.link_index{
+    text-decoration: none;
+}
+
 nav a{
     text-decoration: none; 
+    margin: 0; 
+    padding: 0;
 }
 .icons{
     color: var(--body-verde-escuro); 
@@ -74,18 +80,18 @@ nav a{
 
 .topicos-menu{
     font-family: Poppins, Helvetica, sans-serif;
-    color: var(--branco); 
+    color: white; 
     padding-top: 5px;
 }
 
 .botao-cancelar{
     padding-top: 10px; 
     padding-bottom: 10px; 
-    color: var(--branco);
+    color: white;
     text-align: right;
 }
 .titulo--dropdown-menu{
-    color: var(--branco); 
+    color: white; 
     font-size: 25px;
     font-family: Poppins, Helvetica, sans-serif; 
     font-weight: 800;
@@ -120,7 +126,7 @@ nav a{
 }
 .menu-dropdown-filho a{
     display: block;
-    color: var(--branco);
+    color: white;
 }
 
 .icons-e-topicos-menu{
@@ -129,7 +135,7 @@ nav a{
 
 }  
 .icon_do_menu{
-    color: var(--branco); 
+    color: white; 
     padding-right: 5px; 
 }
 
@@ -157,26 +163,28 @@ nav a{
 }
 
 /* BODY */
+
 .texto-body-titulo{
     font-family: Poppins, Arial, Helvetica, sans-serif; 
-    color: var(--branco); 
-    font-size: 21px; 
-    font-weight: 700;
+    color: white; 
+    font-size: 20px; 
+    font-weight: 500;
     padding-left: 20px; 
     padding-top: 20px;
 } 
 .texto-body-titulo-ul{
-    padding-left: 40px; 
-    color: var(--branco);
+    padding-left: 60px; 
+    color: white;
 }
 .texto-body-topicos{
     font-family: Poppins, Arial, Helvetica, sans-serif; 
-    color: var(--branco); 
-    font-size: 17px; 
-    text-decoration: underline;
-    text-decoration-color: var(--body-verde-claro); 
-    text-decoration-thickness: 1px;
+    color: white; 
+    font-size: 16px; 
+    padding-left: 20px; 
 }
+
+
+
 
 /* RODAPÉ */ 
 main{
@@ -224,9 +232,7 @@ footer{
 .versiculo{
     font-family: Poppins, Arial, Helvetica, sans-serif; 
     color: var(--body-verde-escuro); 
-    color: var(--branco); 
-    text-underline-offset: 2.5px; 
-    text-decoration-color: var(--branco);
+    color: var(--branco);
 } 
 .divs-topicos-footer{
     display: flex; 
@@ -242,51 +248,14 @@ footer{
     font-family: Poppins, Arial, Helvetica, sans-serif; 
     font-size: 13px; 
     opacity: 70%; 
-    text-decoration: none; 
+    text-decoration: none;
 }
 .footer-copyright{
     text-align: center; 
     background-color: var(--fundo-verde-escuro); 
-    padding-bottom: 15px; 
 } 
 .footer-copyright-texto{
     color: var(--branco); 
     opacity: 70%; 
     font-size: 15px;
-} 
-
-@media screen and (max-width: 800px) {
-    #footer_content {
-        display: block;
-        
-    }
-    .versiculo{
-        font-size: 15px;
-    }
-    .logo-e-nomedosite-footer{
-        padding-left: 4px; 
-        padding-top: 4px; 
-    }
-    .divs-topicos-footer{
-        justify-content: space-between;
-    }
-    .topicos-footer{
-        padding-left: 4px; 
-        padding-top: 30px; 
-        font-size: 20%; 
-    }
-    .topicos-footer-texto{
-        padding-bottom: 20px;
-    }
-    .footer-copyright{
-        padding-bottom: 15px;
-    }
-    .footer-copyright span{
-        font-size: 80%;
-    }
-}
-@media screen and (max-width: 450px) {
-    .menu-dropdown-filho{
-        width: 90%;
-    }
 }
