@@ -281,6 +281,14 @@ footer {
 }
 
 /* RESPONSIVIDADE */
+/* BODY */ 
+@media screen and (max-width: 450px) {
+    .menu-dropdown-filho {
+        width: 90%;
+    }
+}
+
+/* RODAPÉ */ 
 @media screen and (max-width: 800px) {
     #footer_content {
         display: block;
@@ -307,15 +315,5 @@ footer {
 
     .footer-copyright span {
         font-size: 80%;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .menu-dropdown-filho {
-        width: 90%;
-    }
-
-    .texto-body-titulo-ul {
-        padding-right: 40px;
     }
 }
