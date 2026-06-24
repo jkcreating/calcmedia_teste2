@@ -249,4 +249,38 @@ footer{
     color: var(--branco); 
     opacity: 70%; 
     font-size: 15px;
+} 
+
+@media screen and (max-width: 800px) {
+    #footer_content {
+        display: block;
+        
+    }
+    .versiculo{
+        font-size: 15px;
+    }
+    .logo-e-nomedosite-footer{
+        padding-left: 2rem; 
+        padding-top: 2rem; 
+    }
+    .divs-topicos-footer{
+        justify-content: space-between;
+    }
+    .topicos-footer{
+        padding-left: 2rem; 
+        padding-top: 2rem; 
+        font-size: 20%; 
+    }
+    .topicos-footer-texto{
+        padding-bottom: 20px;
+    }
+
+
+
+    .footer-copyright{
+        padding-bottom: 15px;
+    }
+    .footer-copyright span{
+        font-size: 80%;
+    }
 }
