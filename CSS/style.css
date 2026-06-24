@@ -256,7 +256,11 @@ footer{
     font-size: 15px;
 } 
 
+/* RESPONSIVIDADE */
 @media screen and (max-width: 800px) {
+    .texto-body-titulo-ul{
+        padding-right: 40px;
+    }
     #footer_content {
         display: block;
     }
