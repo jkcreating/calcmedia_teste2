@@ -286,6 +286,9 @@ footer {
     .menu-dropdown-filho {
         width: 90%;
     }
+    .texto-body-titulo-ul {
+        padding-right: 40px;
+    }
 }
 
 /* RODAPÉ */ 
