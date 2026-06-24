@@ -175,7 +175,6 @@ nav a {
 
 .texto-body-titulo-ul {
     padding-left: 40px;
-    padding-right: 20px;
     color: var(--branco);
 }
 
@@ -293,8 +292,10 @@ footer {
     #footer_content {
         display: block;
     }
-
-    .logo-e-nomedosite-footer {
+    .logo-e-nomedosite-footer{
+        opacity: 90%;
+    }
+    .logo-e-nomedosite-footer{
         padding-left: 4px;
         padding-top: 4px;
     }
