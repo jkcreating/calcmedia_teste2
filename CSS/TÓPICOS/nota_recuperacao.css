@@ -340,11 +340,12 @@ body{
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
-    background-color: var(--branco); 
+    /*background-color: var(--branco); */
+    background-color: black; 
     border-radius: 8px;
     width: 500px; 
     /*margin-left: 40px;*/
-    margin-top: 35px;
+    margin-top: 30px;
 }
 #form{
     display: flex;
@@ -473,7 +474,7 @@ input::placeholder{
     #calculator{
         width: 100%;
         height: 100%; 
-        margin-top: 35px;
+        margin-top: 30px;
     }
 } 
 @media screen and (max-width: 800px) {
