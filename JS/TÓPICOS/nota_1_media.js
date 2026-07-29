@@ -13,11 +13,17 @@ form.addEventListener('submit', function(event){
 
     document.getElementById('infos').classList.remove('hidden');
 
-    if (nota_resposta < 4){
-        description = 'abaixo do peso'; 
+    if (nota_resposta < 70){
+        description = `Sua nota ficou abaixo da média. <a href="../../HTML/TÓPICOS/nota_total.html" class="link_description">Clique aqui</a> para saber a nota que você precisa na 2ª Unidade.`; 
+    }
+    else if(nota_resposta == 70){
+        description = `Sua nota ficou na média. <a href="../../HTML/TÓPICOS/nota_total.html" class="link_description">Clique aqui</a> para saber a nota que você precisa na 2ª Unidade.`; 
+        value.classList.remove('attention');
+        value.classList.add('normal')
+
     }
     else{
-        description = 'esta ok esta ok esta ok esta ok esta ok'; 
+        description = `Sua nota ficou acima da média. <a href="../../HTML/TÓPICOS/nota_total.html" class="link_description">Clique aqui</a> para saber a nota que você precisa na 2ª Unidade.`; 
         value.classList.remove('attention');
         value.classList.add('normal')
     }
@@ -26,7 +32,7 @@ form.addEventListener('submit', function(event){
 
 
     value.textContent = nota_resposta; 
-    document.getElementById('description').textContent = description
+    document.getElementById('description').innerHTML = description
 })
 
 

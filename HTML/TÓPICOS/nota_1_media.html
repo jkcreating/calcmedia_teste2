@@ -39,8 +39,9 @@
 
         <nav>
             <ul>
-                <li><a href="HTML/" class="material-symbols-outlined icons">book_2</a></li>
-                <li><a href="HTML/nome" class="material-icons icons">mail</a></li>
+                <li><a href="../../HTML/SUBTÓPICOS/bibliografia.html" class="material-symbols-outlined icons">book_2</a>
+                </li>
+                <li><a href="../../HTML/SUBTÓPICOS/contato.html" class="material-icons icons">mail</a></li>
                 <li class="menu-dropdown">
                     <input type="checkbox" id="menu-toggle">
 
@@ -53,41 +54,54 @@
                             close
                         </label>
                         <h2 class="titulo--dropdown-menu">O que você procura?</h2>
-                        <a href="/HTML/nota_total.html" class="topicos-menu">1. Cálculo para saber se ficou na MÉDIA na
-                            1ª Unidade</a>
-                        <a href="/HTML/nota_prova.html" class="topicos-menu">2. Cálculo para a PROVA da 2ª Unidade</a>
-                        <a href="/HTML/nota_recuperacao.html" class="topicos-menu">3. Cálculo da nota TOTAL para a 2ª
-                            Unidade</a>
-                        <a href="/HTML/nota_1_media.html" class="topicos-menu">4. Cálculo para saber a MÉDIA PARCIAL</a>
-                        <a href="/HTML/nota_1_media.html" class="topicos-menu">5. Cálculo para a nota de RECUPERAÇÃO</a>
+                        <a href="../../HTML/TÓPICOS/nota_1_media.html" class="topicos-menu">1. Cálculo para saber se
+                            ficou na MÉDIA na
+                            1ª Unidade
+                        </a>
+                        <a href="../../HTML/TÓPICOS/nota_prova.html" class="topicos-menu">2. Cálculo para saber a nota
+                            necessária
+                            para a PROVA
+                            da 2ª Unidade
+                        </a>
+                        <a href="../../HTML/TÓPICOS/nota_total.html" class="topicos-menu">3. Cálculo para saber a nota
+                            TOTAL
+                            necessária
+                            para a 2ª Unidade
+                        </a>
+                        <a href="../../HTML/TÓPICOS/media_parcial.html" class="topicos-menu">4. Cálculo para saber a
+                            MÉDIA PARCIAL</a>
+                        <a href="../../HTML/TÓPICOS/nota_recuperacao.html" class="topicos-menu">5. Cálculo para saber a
+                            nota
+                            necessária para a RECUPERAÇÃO
+                        </a>
 
                         </br>
 
                         <div class="icons-e-topicos-menu">
                             <span class="material-symbols-outlined icon_do_menu">pageview</span>
-                            <a href="">Dicas de estudos</a>
+                            <a href="../../HTML/SUBTÓPICOS/dicas_de_estudo.html">Dicas de estudos</a>
                         </div>
 
                         <div class="icons-e-topicos-menu">
                             <span class="material-symbols-outlined icon_do_menu">book_ribbon</span>
-                            <a href="">Bibliografia</a>
+                            <a href="../../HTML/SUBTÓPICOS/bibliografia.html">Bibliografia</a>
                         </div>
 
 
                         <div class="icons-e-topicos-menu">
                             <span class="material-symbols-outlined icon_do_menu">privacy_tip</span>
-                            <a href="">Política de Privacidade</a>
+                            <a href="../SUBTÓPICOS/politica_de_privacidade.html">Política de Privacidade</a>
                         </div>
 
 
                         <div class="icons-e-topicos-menu">
                             <span class="material-symbols-outlined icon_do_menu">call</span>
-                            <a href="">Contato</a>
+                            <a href="../../HTML/SUBTÓPICOS/contato.html">Contato</a>
                         </div>
 
                         <div class="icons-e-topicos-menu">
                             <span class="material-symbols-outlined icon_do_menu">info</span>
-                            <a href="">Sobre</a>
+                            <a href="../../HTML/SUBTÓPICOS/sobre.html">Sobre</a>
                         </div>
                     </div>
                 </li>
@@ -99,11 +113,11 @@
     <div id="container">
         <div id="calculator">
             <form id="form">
-                <h1 id="title">Cálculo da nota necessária para a RECUPERAÇÃO</h1>
+                <h1 id="title">Cálculo da MÉDIA da 1ª Unidade</h1>
 
                 <div class="input-box">
                     <label for="nota1">
-                        Insira a sua nota da 1ª Unidade (de 1 a 100):
+                        Insira a sua nota das atividades (de 1 a 100):
                     </label>
                     <div class="input-field">
                         <input type="number" placeholder="Ex.: 58" id="nota1" required>
@@ -112,7 +126,7 @@
 
                 <div class="input-box">
                     <label for="nota2">
-                        Valor das atividades da 2ª Unidade (de 1 a 100):
+                        Insira a sua nota da prova (de 1 a 100):
                     </label>
                     <div class="input-field">
                         <input type="number" placeholder="Ex.: 65" id="nota2" required>
@@ -127,7 +141,7 @@
                 <div id="result">
                     <div id="resultado_texto">
                         <span id="value"></span>
-                        <span>Nota necessária</span>
+                        <span>Nota</span>
                     </div>
                     <div id="description">
                         <span></span>
@@ -136,8 +150,7 @@
                 </div>
 
                 <div id="more-info">
-                    <p>Cálculo -> Média Parcial: [(4xN1)+(6xN2)]/10</p>
-                    <p>Nota de Recuperação: 12 - Média Parcial</p>
+                    <p>Cálculo ⭢ Nota das atividades + Nota da prova</p>
                 </div>
 
             </div>
@@ -161,12 +174,13 @@
             </div>
             <div class="divs-topicos-footer">
                 <div class="topicos-footer">
-                    <a href="HTML/" class="topicos-footer-texto">Dicas de Estudos</a>
+                    <a href="../../HTML/SUBTÓPICOS/dicas_de_estudo.html" class="topicos-footer-texto">Dicas de
+                        Estudos</a>
                     <a href="HTML/" class="topicos-footer-texto">Bibliografia</a>
                 </div>
                 <div class="topicos-footer">
-                    <a href="HTML/" class="topicos-footer-texto">Contato</a>
-                    <a href="HTML/" class="topicos-footer-texto">Sobre</a>
+                    <a href="../../HTML/SUBTÓPICOS/contato.html" class="topicos-footer-texto">Contato</a>
+                    <a href="../../HTML/SUBTÓPICOS/sobre.html" class="topicos-footer-texto">Sobre</a>
                 </div>
             </div>
         </div>

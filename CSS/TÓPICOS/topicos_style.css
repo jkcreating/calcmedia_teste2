@@ -371,7 +371,7 @@ body {
 #title::after {
     position: absolute;
     content: '';
-    background-color: var(--fundo-verde-escuro);
+    background-color: var(--body-verde-escuro);
     width: 100%;
     height: 3px;
     bottom: 0;
@@ -434,7 +434,8 @@ body {
     align-items: center;
     border-top: 1px solid #a5a5a5;
     padding: 0.75rem 0;
-    margin-top: 0px;
+    margin-top: 0px; 
+    justify-content: space-between;
 }
 
 #resultado_texto {
@@ -451,7 +452,6 @@ body {
 
 #description {
     width: 15.5rem;
-    color: var(--body-verde-escuro);
 }
 
 #more-info {
@@ -459,8 +459,17 @@ body {
     padding-top: 1.5rem;
 }
 
-#more-info p {
+#more-info p{
     color: rgb(58, 58, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+#more-info a {
+    color: #0000a7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -485,7 +494,9 @@ input::placeholder {
 .attention {
     color: rgb(204, 0, 0);
 }
-
+.link_description{
+    text-decoration: none; 
+}
 @media screen and (max-width: 500px) {
     #container {
         max-width: 500px;
