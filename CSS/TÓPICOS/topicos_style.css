@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --branco: #f0f2f5;
+    --body-verde-claro: #80c82a;
+    --body-verde-escuro: #006100;
+    --fundo-verde-claro: #168105;
+    --fundo-verde-escuro: #003200;
+}
+
+/* PRINCIPAL */
+/* CABEÇALHO */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-color: var(--branco);
+    padding-left: 10px;
+}
+
+.cabecalho nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cabecalho nav li {
+    align-items: center;
+}
+
+.logo-e-nomedosite {
+    display: flex;
+    align-items: center;
+}
+
+.logotipo {
+    height: auto;
+    width: 40px;
+}
+
+.nomedosite {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    padding-left: 5px;
+    color: var(--body-verde-escuro);
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.icons {
+    color: var(--body-verde-escuro);
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.menu-dropdown {
+    position: relative;
+}
+
+.topicos-menu {
+    font-family: Poppins, Helvetica, sans-serif;
+    color: var(--branco);
+    padding-top: 5px;
+}
+
+.botao-cancelar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--branco);
+    text-align: right;
+}
+
+.titulo--dropdown-menu {
+    color: var(--branco);
+    font-size: 25px;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.menu-dropdown-filho {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 400px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    background-color: var(--body-verde-escuro);
+    z-index: 1000;
+
+    transform: translateX(100%);
+    transition: 0.25s ease;
+    pointer-events: none;
+}
+
+#menu-toggle {
+    position: absolute !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    pointer-events: none !important;
+}
+
+.menu-dropdown-filho .topicos-menu:hover {
+    background-color: var(--fundo-verde-claro);
+}
+
+.menu-dropdown-filho a {
+    display: block;
+    color: var(--branco);
+}
+
+.icons-e-topicos-menu {
+    display: flex;
+    padding-top: 7px;
+}
+
+.icon_do_menu {
+    color: var(--branco);
+    padding-right: 5px;
+}
+
+.botao-cancelar {
+    font-size: 40px;
+    z-index: 10000;
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+}
+
+#menu-toggle:checked~.menu-dropdown-filho {
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.menu-dropdown-filho {
+    transform: translateX(100%);
+    pointer-events: none;
+}
+
+#menu-toggle:checked~.menu-dropdown-filho {
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+/* BODY */
+.texto-body-titulo {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    color: var(--branco);
+    font-size: 21px;
+    font-weight: 700;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.texto-body-titulo-ul {
+    padding-left: 40px;
+    color: var(--branco);
+}
+
+.texto-body-topicos {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    color: var(--branco);
+    font-size: 17px;
+    text-decoration: underline;
+    text-decoration-color: var(--body-verde-claro);
+    text-decoration-thickness: 1px;
+}
+
+/* RODAPÉ */
+main {
+    height: 80vh;
+    /* O que faz ficar lá embaixo */
+}
+
+footer {
+    width: 100%;
+    color: var(--body-verde-escuro);
+}
+
+#footer_content {
+    background-color: var(--fundo-verde-escuro);
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer-list {
+    display: flex;
+    text-decoration: none;
+    gap: 0.75;
+    list-style: none;
+}
+
+.logo-e-nomedosite-footer {
+    display: flex;
+    align-items: center;
+}
+
+.logotipo-footer {
+    height: auto;
+    width: 70px;
+    padding-right: 5px;
+}
+
+.nomedosite-footer {
+    font-family: 'Lexend', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: var(--branco);
+    padding-top: 10px;
+}
+
+.nomedosite-e-versiculo {
+    display: block;
+    padding-left: 3px;
+}
+
+.versiculo {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    color: var(--body-verde-escuro);
+    color: var(--branco);
+    text-underline-offset: 2.5px;
+    text-decoration-color: var(--branco);
+}
+
+.divs-topicos-footer {
+    display: flex;
+}
+
+.topicos-footer {
+    display: grid;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+.topicos-footer-texto {
+    color: var(--branco);
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    opacity: 70%;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    text-align: center;
+    background-color: var(--fundo-verde-escuro);
+    padding-bottom: 15px;
+}
+
+.footer-copyright-texto {
+    color: var(--branco);
+    opacity: 70%;
+    font-size: 15px;
+}
+
+/* RESPONSIVIDADE */
+/* BODY */
+@media screen and (max-width: 450px) {
+    .menu-dropdown-filho {
+        width: 90%;
+    }
+}
+
+/* RODAPÉ */
+@media screen and (max-width: 800px) {
+    #footer_content {
+        display: block;
+    }
+
+    .logo-e-nomedosite-footer {
+        opacity: 90%;
+    }
+
+    .logo-e-nomedosite-footer {
+        padding-left: 4px;
+        padding-top: 4px;
+    }
+
+    .divs-topicos-footer {
+        justify-content: space-between;
+    }
+
+    .topicos-footer {
+        padding-left: 4px;
+        padding-top: 30px;
+        font-size: 20%;
+    }
+
+    .topicos-footer-texto {
+        padding-bottom: 20px;
+    }
+
+    .footer-copyright span {
+        font-size: 80%;
+    }
+}
+
+
+
+/* TÓPICO */
+.link-para-home {
+    text-decoration: none;
+}
+
+/* Calculadora */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-image: linear-gradient(to right, var(--fundo-verde-claro), var(--fundo-verde-escuro));
+    font-family: "Lexend", sans-serif;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--branco);
+    border-radius: 8px;
+    width: 500px;
+    margin-top: 15px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    color: var(--body-verde-escuro);
+}
+
+#title {
+    font-family: "Lexend", sans-serif;
+    font-size: 2.25rem;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 7px;
+}
+
+#title::after {
+    position: absolute;
+    content: '';
+    background-color: var(--fundo-verde-escuro);
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+}
+
+.input-box {
+    font-size: 1.1rem;
+    color: var(--body-verde-escuro);
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--body-verde-claro);
+    padding: 0.3rem;
+    border-radius: 3px;
+    font-weight: bold;
+    font-family: "Lexend", sans-serif;
+}
+
+.input-field span {
+    color: var(--branco);
+    font-size: 1.3rem;
+    padding: 0.6rem 1rem;
+}
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: var(--branco);
+    padding: 0 0.5rem;
+}
+
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button {
+    appearance: none;
+}
+
+#calculate {
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: var(--body-verde-escuro);
+    color: var(--branco);
+    padding: 0.5rem 0;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: "Lexend", sans-serif;
+    margin-bottom: 0px;
+}
+
+#result {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    border-top: 1px solid #a5a5a5;
+    padding: 0.75rem 0;
+    margin-top: 0px;
+}
+
+#resultado_texto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.25rem;
+}
+
+#resultado_texto span:last-child {
+    font-size: 0.875rem;
+    color: rgb(58, 58, 58);
+}
+
+#description {
+    width: 15.5rem;
+    color: var(--body-verde-escuro);
+}
+
+#more-info {
+    border-top: 1px solid #a5a5a5;
+    padding-top: 1.5rem;
+}
+
+#more-info p {
+    color: rgb(58, 58, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+input::placeholder {
+    color: rgb(109, 108, 108);
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.normal {
+    color: rgb(0, 180, 0);
+}
+
+.attention {
+    color: rgb(204, 0, 0);
+}
+
+@media screen and (max-width: 500px) {
+    #container {
+        max-width: 500px;
+        height: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #calculator {
+        width: 100%;
+        max-width: 500px;
+        height: 100%; 
+        margin-top: 15px;
+    }
+}
