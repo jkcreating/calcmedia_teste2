@@ -175,6 +175,7 @@ nav a {
 
 .texto-body-titulo-ul {
     padding-left: 40px;
+    padding-right: 40px;
     color: var(--branco);
 }
 
@@ -281,7 +282,7 @@ footer {
 
 /* RESPONSIVIDADE */
 /* BODY */ 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 320px) {
     .menu-dropdown-filho {
         width: 90%;
     }
